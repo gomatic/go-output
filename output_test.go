@@ -5,8 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	output "github.com/gomatic/go-output"
 	"github.com/stretchr/testify/assert"
+
+	output "github.com/gomatic/go-output"
 )
 
 type sample struct {
