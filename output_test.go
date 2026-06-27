@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	output "github.com/skykernel/go-output"
+	output "github.com/gomatic/go-output"
 	"github.com/stretchr/testify/assert"
 )
 

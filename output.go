@@ -8,12 +8,8 @@ import (
 	"encoding/json"
 	"io"
 
-	errs "github.com/skykernel/go-error"
 	"gopkg.in/yaml.v3"
 )
-
-// ErrUnsupportedFormat indicates a format the encoder cannot produce.
-const ErrUnsupportedFormat errs.Error = "unsupported output format"
 
 // Format selects how a result is encoded.
 type Format string
