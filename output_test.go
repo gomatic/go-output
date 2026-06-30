@@ -11,7 +11,7 @@ import (
 )
 
 type sample struct {
-	Name  string `json:"name" yaml:"name"`
+	Name  string `json:"name"  yaml:"name"`
 	Count int    `json:"count" yaml:"count"`
 }
 
