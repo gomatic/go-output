@@ -1,30 +1,5 @@
-# go-output
+[![actions](https://github.com/gomatic/go-output/actions/workflows/actions.yml/badge.svg)](https://github.com/gomatic/go-output/actions/workflows/actions.yml)
+[![docs](https://github.com/gomatic/go-output/actions/workflows/docs.yml/badge.svg)](https://github.com/gomatic/go-output/actions/workflows/docs.yml)
+[![go](https://github.com/gomatic/go-output/actions/workflows/go.yml/badge.svg)](https://github.com/gomatic/go-output/actions/workflows/go.yml)
 
-Encode any value to an `io.Writer` as JSON or YAML through a small format registry, with an `ErrUnsupportedFormat` sentinel for unknown formats.
-
-## Install
-
-```sh
-go get github.com/gomatic/go-output
-```
-
-## Usage
-
-```go
-package main
-
-import (
-	"os"
-
-	output "github.com/gomatic/go-output"
-)
-
-func main() {
-	data := map[string]any{"hello": "world"}
-	if err := output.Write(os.Stdout, output.FormatJSON, data); err != nil {
-		panic(err)
-	}
-}
-```
-
-`Write` defaults to JSON when the format is empty and returns `ErrUnsupportedFormat` for any unknown format.
+[docs](https://gomatic.github.io/docs.go-output/)
